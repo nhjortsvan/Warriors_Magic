@@ -1,0 +1,1954 @@
+{
+  "settings": {
+    "name": "Site-12-04_1639",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "versionFirst": "4.3.4",
+    "uniqCompNum": 5,
+    "versionPublish": "4.3.4"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-right": "4rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "3rem"
+              }
+            },
+            ".mbr-text": {
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_name": "header3",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"100\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#c4bc3b\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg\">\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/warriors-logo-and-score-dec1-396x211.jpg\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\">\n                    Warriors Play by Play Analysis</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">Golden State Warriors at Orlando Magic<br>Dec 1, 2017</p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "qCTaCY8kUR",
+          "_anchor": "header3-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "table"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-overlay": {
+              "z-index": "1"
+            },
+            ".container-slide.container": {
+              "width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".active.carousel-item-right, .carousel-item-next": {
+              "-webkit-transform": "translate3d(100%, 0, 0)",
+              "transform": "translate3d(100%, 0, 0)"
+            },
+            ".active.carousel-item-left, .carousel-item-prev": {
+              "-webkit-transform": "translate3d(-100%, 0, 0)",
+              "transform": "translate3d(-100%, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "70px",
+                "height": "70px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            }
+          },
+          "_name": "slider1",
+          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
+          "_cid": "qCTbXCMHTe",
+          "_anchor": "slider1-1",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": false,
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": false,
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-55-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "Tip Off Warriors - Magic Dec 1",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Center Pachulia to Forward Green",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-56-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "VIDEO SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Slide with youtube video background and color overlay. Title and text are aligned to the left.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-57-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-58-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-59-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-60-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-61-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-62-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-63-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-64-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-65-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-66-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-67-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-68-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-69-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Curry moves directly under the basket for offensive rebound. &nbsp;Pachula (1) box out on Vukevic [1]. Curry ballside, Simmons weakside in paint.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-70-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Curry rebounds Durant jumper, short off iron, spins left dribbles through defenders, Gordon replaces Simmons to guard Curry. &nbsp;Green gets open for Curry pass to top of perimeter. &nbsp;",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-71-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-72-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "3 Orlando defenders move to perimeter when Curry gets to top of perimeter, closely flanked by Green and Durant. &nbsp; Gordon on Green balliside, Little Richard Payton on Curry at the top, Fourier [F] on Durant (F) weakside, Green's crosscourt pass to Thompson in right corner is stolen by &nbsp;Forward Jonathon Simmons #17 when he steps in the passing lane at the top of the key.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-73-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "73) Orlando transition after Simmons steal. Simmons dribbles towards his own baseline, between Thompson and Pachulia, and spins left around Pachulia. &nbsp;Payton gets open at the top of the perimeter for the outlet pass from Simmons, while Gordon and Fournier sprint to get past half court to set up the offense. &nbsp; Durant has Fournier, Curry has both Payton and Fournier, &nbsp;Green moves ballside to replace Curry on Simmons, about to get the outlet.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-74-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "74) Orlando transition Simmons decides not to pass, uses Vucevic as screen and pushes ball up court. &nbsp; Orlando Center, Guard, and Forward all break to set up offense. &nbsp; Green, Curry and Durant zone up at half court.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-75-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "75) Orlando offense. Simmons [F] at mid-court. &nbsp; Warriors go 3-2 zone on defense with Durant and Green at top of the key, Thompson, Pachulia and Curry on ballside perimeter. &nbsp; Vuvevic is moving without the ball to set a double screen on both Thompson and Pachulia. &nbsp; Pachulia recognizes and prepares a pick a pick on Vucevic, leaving Thompson to defend Simmons. &nbsp; &nbsp;On ballside, Green is moving towards the passing lane between Simmons and Fournier on the right perimeter.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-76-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "76) Orlando offense. Simmons [F] at mid-court. &nbsp; Warriors go 3-2 zone on defense with Durant and Green at top of the key, Thompson, Pachulia and Curry on ballside perimeter. &nbsp; Vuvevic &nbsp;screen on &nbsp;Pachulia. &nbsp; Thompson moves laterally around screen to the spot Simmons will cut to. &nbsp;&nbsp;",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-77-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "77) Orlando offense. Simmons [F] uses Vucevic screen to break to his left and attack the basket from the left top of the key, but Thompson has beat him to the spot. &nbsp;Thompson is relaxed and balanced, ready to go up strong. &nbsp;&nbsp;",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-78-1920x1080.jpg",
+                "active": true,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "78) Orlando offense. Simmons one-on-one shot attempt blocked by Thompson. &nbsp;{End sequence}",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "table"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-overlay": {
+              "z-index": "1"
+            },
+            ".container-slide.container": {
+              "width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".active.carousel-item-right, .carousel-item-next": {
+              "-webkit-transform": "translate3d(100%, 0, 0)",
+              "transform": "translate3d(100%, 0, 0)"
+            },
+            ".active.carousel-item-left, .carousel-item-prev": {
+              "-webkit-transform": "translate3d(-100%, 0, 0)",
+              "transform": "translate3d(-100%, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "70px",
+                "height": "70px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            }
+          },
+          "_name": "slider1",
+          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
+          "_cid": "qCThDmxjyV",
+          "_anchor": "slider1-2",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": false,
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": true,
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-72-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "Magic defensive rebound and transition",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-73-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "VIDEO SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Slide with youtube video background and color overlay. Title and text are aligned to the left.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-74-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-75-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-76-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-77-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-78-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-79-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-80-1920x1080.jpg",
+                "active": true,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "table"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-overlay": {
+              "z-index": "1"
+            },
+            ".container-slide.container": {
+              "width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".active.carousel-item-right, .carousel-item-next": {
+              "-webkit-transform": "translate3d(100%, 0, 0)",
+              "transform": "translate3d(100%, 0, 0)"
+            },
+            ".active.carousel-item-left, .carousel-item-prev": {
+              "-webkit-transform": "translate3d(-100%, 0, 0)",
+              "transform": "translate3d(-100%, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "70px",
+                "height": "70px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            }
+          },
+          "_name": "slider1",
+          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
+          "_cid": "qCTkf3OL93",
+          "_anchor": "slider1-3",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": false,
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": false,
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-78-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "Warrior steal and transition",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-79-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "VIDEO SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "Slide with youtube video background and color overlay. Title and text are aligned to the left.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-80-1920x1080.jpg",
+                "active": true,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "table"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-overlay": {
+              "z-index": "1"
+            },
+            ".container-slide.container": {
+              "width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".active.carousel-item-right, .carousel-item-next": {
+              "-webkit-transform": "translate3d(100%, 0, 0)",
+              "transform": "translate3d(100%, 0, 0)"
+            },
+            ".active.carousel-item-left, .carousel-item-prev": {
+              "-webkit-transform": "translate3d(-100%, 0, 0)",
+              "transform": "translate3d(-100%, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "70px",
+                "height": "70px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            }
+          },
+          "_name": "slider1",
+          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
+          "_cid": "qD4z76cCFe",
+          "_anchor": "slider1-4",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": false,
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": false,
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-78-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "Warriors possession",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "Thompson block on Simmons starts the offense",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-success\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-79-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "VIDEO SLIDE",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "79) Green gets to the loose ball after Thompson block.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn  btn-primary\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-80-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "80) Green push ball up court. &nbsp;Curry leads, splitting 2 defenders on the right side of court. &nbsp;Gordon [F] sprints to intercept Green at mid-court. &nbsp;Vucevic and Payton have Curry. &nbsp; Durant, Pachulia and Thompson are behind the play.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-81-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "81) &nbsp; Curry cuts left between Fourier [F] and Simmons [F], splitting 2 defenders on the right side of court, passing Gordon [F] on the left as Gordon defends Green. &nbsp; All Orlando players are weakside.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-82-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "82) &nbsp; Curry moves to left corner as Payton bodies up to disrupt Curry. &nbsp;Warriors Guard, Forwards and Center are aligned at the top to start the play. &nbsp; Orlando responds with 2-2 zone, with Gordon and Vucevic at the top of the key, and Fornier and Simmons on the perimenter. &nbsp;Simmons recognizes the pass that is coming to Thompson and sprints to his spot.&nbsp;",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-83-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "83) &nbsp;Green pass to Thompson who is defended by Simmons. &nbsp;Durant cuts to the paint from the weakside. &nbsp;Vucevic recognizes that Fournier is beat, and prepares to leave Pachulia and pick up Durant in the paint. &nbsp;Curry has sealed Payton, and can move easily to the left corner.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-84-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "84) &nbsp;Orlando defense is set up. Thompson triple threat from perimeter. Durant is cutting to basket, hands out for pass. Payton on Curry, but leaning toward passing lane.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-85-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "85) &nbsp; Thompson assist to cutting Durant under basket. &nbsp;Fournier got beat, and Vucevic did not pick up Durant. &nbsp;Durant scores field goal, plus one on Fournier.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-86-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "86) &nbsp; &nbsp;Fournier goards Durant under the basket &nbsp;.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-87-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "87) &nbsp; &nbsp;Fournier goards Durant under the basket. &nbsp;Durant dribbles right-handed away from basket with Fournier on his left. &nbsp; Durant will spin to right, beating Fournier to basket.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-88-1920x1080.jpg",
+                "active": true,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "88) &nbsp; &nbsp;Durant takes giant quick step with right, and drives left-handed to basket, beating Fournier.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-89-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "89) &nbsp; &nbsp;Durant layup plus one Fournier foul.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-90-1920x1080.jpg",
+                "active": true,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "90) &nbsp; &nbsp;Rebound .",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/img-91-1920x1080.jpg",
+                "active": false,
+                "showButtons": false,
+                "showText": true,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "IMAGE SLIDE",
+                "overlay": false,
+                "contentAlign": "right",
+                "text": "91) &nbsp; &nbsp;Thoughts on the possession .",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" href=\"https://mobirise.com\">FOR MAC</a>"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
